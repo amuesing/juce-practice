@@ -1,8 +1,3 @@
-/*
-
-    IMPORTANT! This file is auto-generated each time you save your
-    project - if you alter its contents, your changes may be overwritten!
-
-*/
-
-#include <juce_core/juce_core.cpp>
+version https://git-lfs.github.com/spec/v1
+oid sha256:637c64ea013cd7379a84851c02c5fd731eda19d8e8ef218e9cc8d8c533d66d6e
+size 193

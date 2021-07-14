@@ -1,8 +1,3 @@
-/*
-
-    IMPORTANT! This file is auto-generated each time you save your
-    project - if you alter its contents, your changes may be overwritten!
-
-*/
-
-#include <juce_audio_devices/juce_audio_devices.cpp>
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a99cdb3286a26e39a08b1b9e68f79ed203530f3e7388578c1813848dda5152a
+size 211
