@@ -118,8 +118,10 @@ public:
         {
             if (transportSource.isPlaying())
                 changeState (Playing);
-            else
+            else if ((state == Stopping) || (state == Playing))
                 changeState (Stopped);
+            else if (Pausing == state)
+                changeState (Paused);
         }
     }
 
@@ -129,6 +131,8 @@ private:
         Stopped,
         Starting,
         Playing,
+        Pausing,
+        Paused,
         Stopping
     };
 
@@ -154,6 +158,15 @@ private:
                 case Playing:                           // [5]
                     stopButton.setEnabled (true);
                     break;
+                    
+                case Pausing:
+                    transportSource.stop();
+                    break;
+ 
+                case Paused:
+                    playButton.setButtonText ("Resume");
+                    stopButton.setButtonText ("Return to Zero");
+                    break;
 
                 case Stopping:                          // [6]
                     transportSource.stop();
@@ -164,9 +177,9 @@ private:
 
     void openButtonClicked()
     {
-        chooser = std::make_unique<juce::FileChooser> ("Select a Wave file to play...",
+        chooser = std::make_unique<juce::FileChooser> ("Select a .wav .aif .aiff file to play...",
                                                        juce::File{},
-                                                       "*.wav");                     // [7]
+                                                       "*.wav;*.aif;*.aiff");
         auto chooserFlags = juce::FileBrowserComponent::openMode
                           | juce::FileBrowserComponent::canSelectFiles;
 
@@ -191,12 +204,18 @@ private:
 
     void playButtonClicked()
     {
-        changeState (Starting);
+        if ((state == Stopped) || (state == Paused))
+            changeState (Starting);
+        else if (state == Playing)
+            changeState (Pausing);
     }
 
     void stopButtonClicked()
     {
-        changeState (Stopping);
+        if (state == Paused)
+            changeState (Stopped);
+        else
+            changeState (Stopping);
     }
 
     //==========================================================================
