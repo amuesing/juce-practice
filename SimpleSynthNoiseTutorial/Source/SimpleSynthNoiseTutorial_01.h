@@ -73,7 +73,7 @@ public:
 
     void releaseResources() override
     {
-        juce::Logger::getCurrentLogger()->writeToLog ("Releasing audio resources");
+        juce::Logger::getCurrentLogger()->writeToLog ("Releasing resources");
     }
 
     void getNextAudioBlock (const juce::AudioSourceChannelInfo& bufferToFill) override

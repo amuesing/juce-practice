@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b4897d90c9ae134b8dc4f593eada9b3c44440631b619de9fc87fb3f46a0d834
-size 197
+/*
+
+    IMPORTANT! This file is auto-generated each time you save your
+    project - if you alter its contents, your changes may be overwritten!
+
+*/
+
+#include <juce_events/juce_events.cpp>

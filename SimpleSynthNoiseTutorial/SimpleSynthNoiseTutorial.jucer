@@ -3,11 +3,11 @@
 <JUCERPROJECT name="SimpleSynthNoiseTutorial" companyName="JUCE" version="1.0.0"
               userNotes="Simple noise synthesiser." companyWebsite="http://juce.com"
               projectType="guiapp" useAppConfig="0" addUsingNamespaceToJuceHeader="1"
-              id="pJwogv" jucerFormatVersion="1">
-  <MAINGROUP id="hMY0vs" name="SimpleSynthNoiseTutorial">
-    <GROUP id="{1B1B3745-9CE8-BF23-89DA-E06A9134411C}" name="Source">
-      <FILE id="HqXV4Q" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
-      <FILE id="ER0WnM" name="SimpleSynthNoiseTutorial_01.h" compile="0"
+              id="PSVIE9" jucerFormatVersion="1">
+  <MAINGROUP id="A3Jcqu" name="SimpleSynthNoiseTutorial">
+    <GROUP id="{05A4942F-C76E-BCBF-B6BD-CB293F989257}" name="Source">
+      <FILE id="epQdlM" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="mCkMlj" name="SimpleSynthNoiseTutorial_01.h" compile="0"
             resource="0" file="Source/SimpleSynthNoiseTutorial_01.h"/>
     </GROUP>
   </MAINGROUP>
@@ -84,7 +84,4 @@
     </LINUX_MAKE>
   </EXPORTFORMATS>
   <JUCEOPTIONS/>
-  <LIVE_SETTINGS>
-    <OSX/>
-  </LIVE_SETTINGS>
 </JUCERPROJECT>

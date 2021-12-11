@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c18af147cda78f9384c9227d7518cc7bebe0678de5cf058ec651d9fc49c38ba1
-size 215
+/*
+
+    IMPORTANT! This file is auto-generated each time you save your
+    project - if you alter its contents, your changes may be overwritten!
+
+*/
+
+#include <juce_data_structures/juce_data_structures.cpp>
